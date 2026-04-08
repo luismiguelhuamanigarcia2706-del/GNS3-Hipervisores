@@ -81,6 +81,9 @@ Porque Windows también necesita recursos para funcionar. Si se asigna demasiada
 Se recomienda usar solo el 50% de los recursos disponibles para mantener un equilibrio entre rendimiento y estabilidad.
 
 ---
+![gns3](img/gns3.png)
+
+---
 
 ## 🧪 3. Integración con VirtualBox
 
