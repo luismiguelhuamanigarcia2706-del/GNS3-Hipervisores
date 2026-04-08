@@ -34,6 +34,9 @@ Sin estas tecnologías, la virtualización se realiza por software, lo cual es m
 ✅ **Conclusión:**
 Activar VT-x/AMD-V es obligatorio para obtener un entorno de simulación estable y de alto rendimiento.
 
+![arquitectura](img/arquitectura.png)
+
+
 ---
 
 ## ⚙️ 2. GNS3 VM: El Motor de Simulación
