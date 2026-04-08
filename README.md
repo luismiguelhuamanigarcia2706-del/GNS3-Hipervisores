@@ -158,28 +158,13 @@ Estas opciones deben habilitarse para permitir que GNS3 opere como una red real.
 
 Durante la implementación de laboratorios en GNS3, es común enfrentar errores relacionados con la virtualización, red y permisos del sistema. A continuación, se presenta una matriz con problemas reales, su causa técnica y la solución aplicada.
 
-| Error Detectado                                          | Causa Técnica (¿Por qué ocurre?)                                                                                                                                                                                                                      | Solución Implementada                                                                                                             |
-| -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| **KVM support available: False**                         | Este error ocurre porque el hipervisor (VirtualBox o ESXi) no está pasando las extensiones de virtualización (VT-x/AMD-V) a la GNS3 VM. Además, puede ser causado por la activación de Hyper-V en Windows, que bloquea el acceso directo al hardware. | Activar la virtualización en BIOS (VT-x/AMD-V), desactivar Hyper-V y habilitar la virtualización anidada (nested virtualization). |
-| **No hay conectividad entre dispositivos (Router – VM)** | Esto sucede porque el adaptador de red no está en modo promiscuo, lo que impide que la interfaz capture tráfico de capa 2 necesario para la comunicación entre dispositivos virtuales.                                                                | Configurar el adaptador en VirtualBox con “Modo Promiscuo: Permitir todo” o verificar la correcta conexión en GNS3.               |
-| **Error de conexión al servidor GNS3 (Puerto 3080)**     | El Firewall de Windows bloquea las peticiones hacia la API de GNS3, impidiendo la comunicación entre la GUI y la GNS3 VM.                                                                                                                             | Crear reglas en el firewall para permitir tráfico en el puerto 3080 y rango 5000-10000.                                           |
-| **uBridge permission error**                             | Este error ocurre porque GNS3 no tiene permisos suficientes para ejecutar procesos de red a bajo nivel en el sistema operativo.                                                                                                                       | Ejecutar GNS3 como administrador o ajustar permisos del sistema.                                                                  |
-| **Alto consumo de CPU / Lentitud**                       | Se produce cuando KVM no está activo o cuando se asignan demasiados recursos a la VM, provocando saturación del sistema host.                                                                                                                         | Verificar que KVM esté en TRUE y ajustar la asignación de CPU y RAM (máximo 50%).                                                 |
-
 ---
-
+DIAGRAMA:   https://lucid.app/lucidchart/1013b9b5-1f0b-48b4-b6af-fd69865a2acd/edit?viewport_loc=2150%2C-3631%2C9994%2C5094%2C0_0&invitationId=inv_cb18a8b1-5a49-40a7-b05e-75947107b07f
+---
 ###  Análisis Técnico
 
 La mayoría de errores en GNS3 están relacionados con la virtualización y la configuración de red. Esto se debe a que GNS3 intenta replicar un entorno de red real, lo cual requiere acceso directo al hardware y control completo del tráfico de red.
-
 Si estos requisitos no se cumplen (por ejemplo, por restricciones del sistema operativo o mala configuración), el comportamiento de la red virtual se ve afectado.
-
----
-
-###  Conclusión
-
-El troubleshooting no solo permite solucionar errores, sino también comprender el funcionamiento interno de GNS3 y los hipervisores. Identificar la causa raíz de los problemas es fundamental para implementar soluciones efectivas y mantener un entorno estable.
-
 ---
 
 ## 📎 Referencias
