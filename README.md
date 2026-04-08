@@ -34,7 +34,7 @@ Sin estas tecnologías, la virtualización se realiza por software, lo cual es m
 ✅ **Conclusión:**
 Activar VT-x/AMD-V es obligatorio para obtener un entorno de simulación estable y de alto rendimiento.
 
----
+
 
 ![arquitectura](img/arquitectura.png)
 
@@ -80,7 +80,7 @@ Porque Windows también necesita recursos para funcionar. Si se asigna demasiada
 ✅ **Conclusión:**
 Se recomienda usar solo el 50% de los recursos disponibles para mantener un equilibrio entre rendimiento y estabilidad.
 
----
+
 ![gns3](img/gns3.png)
 
 ---
@@ -120,8 +120,10 @@ Porque en redes reales, dispositivos como switches manejan tráfico de capa 2 (b
 ✅ **Conclusión:**
 El modo promiscuo es fundamental para simular redes reales de manera precisa.
 
----
 
+![imagine3](img/imagine3.png)
+
+---
 ## 🌐 4. Integración con VMware ESXi
 
 ### 🧩 Arquitectura Cliente-Servidor
