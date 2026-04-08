@@ -131,19 +131,19 @@ Configurar:
 
 ---
 
-##  Imagenes
-
-Coloca aquí tus imágenes:
-
-![Topología](img/imagenes.png)
-
----
-
 ##  Diagramas
 
 Coloca aquí tus imágenes:
 
 ![Topología](img/topologia.png)
+
+---
+
+##  VIdeo
+
+Coloca aquí tus imágenes:
+
+![Topología](img/video.png)
 
 ---
 
