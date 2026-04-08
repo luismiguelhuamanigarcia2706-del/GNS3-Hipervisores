@@ -162,7 +162,6 @@ Estas opciones deben habilitarse para permitir que GNS3 opere como una red real.
 
 ![vmware](img/vmware.png)
 
-
 --- 
 
 ## 🛠️ 5. Matriz de Solución de Errores (Troubleshooting)
@@ -190,14 +189,6 @@ Si estos requisitos no se cumplen (por ejemplo, por restricciones del sistema op
 ### ✅ Conclusión
 
 El troubleshooting no solo permite solucionar errores, sino también comprender el funcionamiento interno de GNS3 y los hipervisores. Identificar la causa raíz de los problemas es fundamental para implementar soluciones efectivas y mantener un entorno estable.
-
----
-
-##  Diagramas
-
-Coloca aquí tus imágenes:
-
-![Topología](img/topologia.png)
 
 ---
 
