@@ -139,11 +139,11 @@ Coloca aquí tus imágenes:
 
 ---
 
-##  VIdeo
+## 📎 Referencias
 
-Coloca aquí tus imágenes:
-
-![Topología](img/video.png)
+- https://www.telectronika.com/articulos/ti/que-es-gns3/
+- https://www.telectronika.com/tutoriales/gns3-tutorial-instalacion-configuracion/
+- https://www.telectronika.com/tutoriales/gns3-vm-setup-wizard/
 
 ---
 
