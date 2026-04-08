@@ -160,13 +160,8 @@ ESXi implementa políticas de seguridad en sus switches virtuales.
 ✅ **Conclusión:**
 Estas opciones deben habilitarse para permitir que GNS3 opere como una red real.
 
----
+![vmware](img/vmware.png)
 
-## 🛠️ Conclusión General
-
-Cada configuración en GNS3 y los hipervisores no es arbitraria, sino que responde a la necesidad de replicar el comportamiento real de una red.
-
-La correcta configuración de la virtualización, red y seguridad permite obtener un entorno estable, eficiente y cercano a un entorno profesional.
 
 --- 
 
